@@ -1,0 +1,5 @@
+Raspberry Pi command: raspivid -t 999999 --hflip -o - -w 512 -h 512 -fps 15 | nc [IP address of your computer here] [port number of your computer here]
+
+For your computer, if you're on windows you need to get netcat. You also need MPlayer which you can download somewhere as well. Then, run:
+
+[netcat executable file path] -L -p [port number to communicate on] | [mplayer executable path] -vo direct3d -fps 24 -cache 512 -
