@@ -68,7 +68,7 @@ if [ ! $(cat /etc/timezone | egrep "^Etc/UTC" >/dev/null) ]; then
   echo "Done"
 fi
 
-bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
+curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered | bash
 
 sudo systemctl enable vncserver-virtuald.service
 sudo systemctl enable vncserver-x11-serviced.service
