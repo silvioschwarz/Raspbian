@@ -25,7 +25,9 @@ echo
 #sudo -H pip3 install -U pip
 #pip list --format legacy --outdated | awk '{ print $1}' | xargs sudo -H pip install -U --no-cache-dir --ignore-installed
 #pip install -r <(pip freeze) --upgrade --no-cache-dir --user
-pip3 install --user -U `pip3 list --format=columns --outdated | awk '!/Package|---/{ print $1}'`
+#pip3 install --user -U `pip3 list --format=columns --outdated | awk '!/Package|---/{ print $1}'`
+pip3 install --user -U  -i https://www.piwheels.hostedpi.com/simple \
+`pip3 list --format=columns --outdated | awk '!/Package|---/{ print $1}'`
 
 conda update --all --override-channels -c main -c conda-forge
 

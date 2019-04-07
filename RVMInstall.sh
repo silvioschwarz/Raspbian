@@ -23,5 +23,8 @@ rvm use 2.6
 
 echo "install github-pages builder jekyll gems"
 gem install github-pages builder jekyll
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 712a3b8d66aa14c440f7e03655aee499bead9135
