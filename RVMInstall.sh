@@ -23,5 +23,3 @@ rvm use 2.6
 
 echo "install github-pages builder jekyll gems"
 gem install github-pages builder jekyll
-
-export JEKYLL_GITHUB_TOKEN=a4f438f4ba22540f3ecf9062b3c1a1a54af57eed

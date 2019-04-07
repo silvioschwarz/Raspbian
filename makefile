@@ -48,6 +48,9 @@ squid:
 tor: 
 	@echo $@
 	sudo apt install tor
+update:
+	@echo $@
+	sudo apt update && sudo apt upgrade && sudo apt autoremove
 vpn: 
 	@echo $@
 	curl -L https://install.pivpn.io | bash
