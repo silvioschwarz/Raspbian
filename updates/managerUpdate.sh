@@ -15,7 +15,6 @@ ROOT_UID="0"
 #        exit 1
 #fi
 
-snap list | awk -F" " '{if ($1 && NR>1) { system("snap refresh " $1 " 2>/dev/null") }}'
 
 echo  "${GREEN}################################"
 echo  "THEM PIP'ERS"
@@ -39,7 +38,6 @@ echo "${NORMAL}"
 echo
 npm install -g npm
 rvm get stable --auto-dotfiles
-apm upgrade
 echo  "${BLUE}################################"
 echo  "DONE!"
 echo  "################################"

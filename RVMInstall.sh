@@ -18,8 +18,8 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
 echo "install ruby2.6"
-rvm install 2.6
-rvm use 2.6
+rvm get stable --auto-dotfiles
+rvm -v
 
 echo "install github-pages builder jekyll gems"
 gem install github-pages builder jekyll
