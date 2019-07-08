@@ -79,5 +79,5 @@ sudo apt-get install -y libatlas-base-dev
 git config --global user.name "Silvio Schwarz"
 git config --global user.email admin@silvioschwarz.com
 
-./update.sh
+./updates/update.sh
 sudo raspi-config

@@ -14,6 +14,8 @@ new:
 	@echo $@
 	./newInstall.sh	
 	./backportsInstall.sh
+
+liteEnhancements:
 	sudo apt-get install --no-install-recommends xserver-xorg xinit 
 	sudo apt install raspberrypi-ui-mods lightdm
 notrack: 
@@ -39,7 +41,7 @@ python:
 	@echo $@
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 	sudo apt install python-dev python-pandas python-numpy python-scipy python-matplotlib
-	pip3 install --user dash dash-html-components dash-core-components dash-table plotly dash-daq
+	python3 -m pip install --user dash dash-html-components dash-core-components dash-table plotly dash-daq
 squid: 
 	@echo $@
 	sudo apt-get install squid3 squidguard
